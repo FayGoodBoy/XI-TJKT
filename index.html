@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XI TJKT 1 - SMKN 1 Amuntai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="blocks"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <h1 class="rainbow-text">
+    <span>X</span><span>I</span> <span>T</span><span>J</span><span>K</span><span>T</span> <span>1</span>
+</h1>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Class Structure</a></li>
+                <li><a href="#">Lesson Timetable</a></li>
+                <li><a href="#">Cleaning Schedule</a></li>
+            </ul>
+        </div>
+        <div class="jam-container" id="jam-container">
+            <span id="jam"></span>
+        </div>
+    </nav>
+    <main>
+        <h2>Daftar Murid</h2>
+        <div class="siswa-container">
+            <script>
+                const siswa = [
+                    "Mahfuzah", "Ratul", "Miya", "Uswa", "Khadijah",
+                    "Yoga", "Saufi", "Ramadhani", "Fairuz", "Rizky",
+                    "Aditya", "Dani", "Sahbana", "Naufal", "Suwardani",
+                    "Saputra", "Farid", "Nasyir", "Hasan", "Syahid",
+                    "Arpa'i", "Fahmi"
+                ];
+                siswa.forEach((nama, i) => {
+                    document.write(`<div class="siswa" style="background-color: hsl(${i * 16}, 70%, 60%)">${nama}</div>`);
+                });
+            </script>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy; XI TJKT 1
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
